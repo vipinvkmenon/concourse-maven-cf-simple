@@ -6,7 +6,8 @@ This example project shows:
 
 ## Prerequisites
 
-This guide assumes you have a working installation of Concourse.  If you don't, please
+This 
+guide assumes you have a working installation of Concourse.  If you don't, please
 follow the Concourse [Hellow World](http://concourse.ci/hello-world.html) guide to get
 up and running with Concourse locally (uses Vagrant and VirtualBox).
 
