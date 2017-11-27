@@ -14,5 +14,5 @@ outputs:
   - name: build-output
 
 run:
-  path: source-code/ci/build2.sh
+  path: source-code/ci/build.sh
 
