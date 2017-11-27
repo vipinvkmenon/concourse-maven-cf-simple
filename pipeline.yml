@@ -12,7 +12,7 @@ resources:
   type: pull-request
   source:
     username: vipinvkmenon
-    password: 992da09f254c521d5b4c8105f93f38dccce442a7
+    password: <>
     skip_ssl_verification: true
     skip_cert_verification: true
     repo: vipinvkmenon/concourse-maven-cf-simple
