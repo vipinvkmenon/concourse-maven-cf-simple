@@ -1,28 +1,20 @@
 # Copy pipeline-secrets-example.yml to pipeline-secrets.yml and update with your values then run:
 # fly -t ci set-pipeline -p maven-cf-simple -c pipeline.yml -l pipeline-secrets.yml
 ---
-resource_types:
-  - name: pull-request
-    type: docker-image
-    source:
-      repository: jtarchie/pr
-
 resources:
 - name: source-code
-  type: pull-request
+  type: git
   source:
-    username: vipinvkmenon
-    password: <>
     skip_ssl_verification: true
     skip_cert_verification: true
-    repo: vipinvkmenon/concourse-maven-cf-simple
-    base: master
+    uri: https://github.com/vipinvkmenon/concourse-maven-cf-simple.git
+    branch: mast2
 
 jobs:
 - name: build
   public: true
   plan:
-  - { get: source-code, trigger: true, version: every }
+  - { get: source-code, trigger: true }
   - task: build
     file: source-code/ci/build.yml
 
