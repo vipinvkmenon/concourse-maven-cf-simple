@@ -8,7 +8,7 @@ resources:
     skip_ssl_verification: true
     skip_cert_verification: true
     uri: https://github.com/vipinvkmenon/concourse-maven-cf-simple.git
-    branch: mast2
+    branch: mast3
 
 jobs:
 - name: build
