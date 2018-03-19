@@ -1,4 +1,4 @@
-# Concourse Example: maven-cf-simple
+# Concourse Example: maven-cf-simpl:
 
 
 This example project shows:
